@@ -17,7 +17,6 @@ body{
 
 #mainmenu ul{
 	margin:0;
-	height:20px;
 	display:block;
 }
 
@@ -38,9 +37,44 @@ a:hover{
 	text-decoration:underline;
 }
 
-#mainintro{
+#blankspace{
+	height:260px;
+}
+
+@keyframes typing{
+	from { width: 0 }
+  	to { width: 100% }
+}
+
+@keyframes blink-caret {
+  0% { border-color: white; }
+  25% { border-color: transparent; }
+  50% { border-color: white; }
+  75% { border-color: transparent; }
+}
+
+#mainintro h1{
+	overflow:hidden;
 	clear:both;
-	padding-top:200px;
+	border-right: 2px solid transparent;
+	text-align:center;
+	font-size: 60px;
+	margin:0 auto;
+	white-space: nowrap;
+	animation: 
+    typing 6s steps(40, end),
+    blink-caret 1.3s step-end 2.3;
+}
+
+#mainintro h4{
+	clear:both;
 	text-align:center;
 	font-size: 30px;
+	animation: slowappear 4.6s steps(40,end);
+}
+
+@keyframes slowappear {
+	0% {color:transparent;}
+	70% {color:transparent;}
+	100% {color:white;}
 }
