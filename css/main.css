@@ -1,14 +1,13 @@
 body{
-	background:url("../images/background4.jpg");
-	background-size:cover;
+	background:gray;
 	color:white;
+	font-family:sans-serif;
 }
 
 /*Top navigation bar*/
 #mainmenu{
 	margin:0, 10px, 0, 0;
 	padding:0;
-	font-family: sans-serif;
 	list-style-type:none;
 	float:right;
 	font-size: 25px;
@@ -23,7 +22,6 @@ body{
 #mainmenu ul li{
 	list-style-type:none;
 	display:inline;
-	font-family:"work-sans";
 	margin:10px;
 	padding:0;
 }
@@ -54,6 +52,7 @@ a:hover{
 }
 
 #mainintro h1{
+	font-family: monospace;
 	overflow:hidden;
 	clear:both;
 	border-right: 2px solid transparent;
