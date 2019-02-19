@@ -1,0 +1,73 @@
+$pcolor: #ff8c00;
+$scolor: #4250f4;
+$gray-5: rgb(40,40,40);
+$gray-4: rgb(80,80,80);
+$gray-3: rgb(120,120,120);
+$gray-2: rgb(160,160,160);
+$gray-1: rgb(200,200,200);
+
+$dfont: 'Nunito', sans-serif;
+$font2: 'Arvo', serif;
+
+body{
+	background:$scolor;
+	color:white;
+}
+
+#mainNavbar {
+	font-family: $dfont;
+	font-weight: 400;
+	font-size: 1.5rem;
+	background: $pcolor;
+	.navbar-brand{
+		.enlarge{
+			font-size: 2rem;
+			color:gray;
+		}
+	}
+}
+
+.navbar{
+	.scrolled {
+		background: $pcolor;
+		transition: background 700ms;
+	}
+}
+
+#mainoptions {
+	a,a:visited{
+		color: $gray-3;
+	}
+	a:hover{
+		background: $gray-3;
+		color: $pcolor;
+	}
+}
+
+#mainpage {
+	margin-top: 53px;
+	.col-7{
+		background: $scolor;
+		.intro{
+			font-family: $font2;
+			width:95%;
+			margin:30px;
+			padding-top:30px;
+			padding-bottom: 208px;
+			padding-left:30px;
+			color: $pcolor;
+			background: white;
+			#name{
+				font-size:100px;
+			}
+		}
+	}
+	#picture{
+		background: url("../images/fullbody.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center 40%;
+		height: 610px;
+		margin:30px;
+	}
+}

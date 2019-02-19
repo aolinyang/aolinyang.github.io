@@ -1,95 +1,75 @@
-body{
-	background:black;
-	color:white;
+/* line 12, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+body {
+  background: #4250f4;
+  color: white;
 }
 
-#mainNavbar .navbar-brand .enlarge {
-	font-size: 2rem;
-	color:gray;
-}
-
+/* line 17, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
 #mainNavbar {
-	font-family: 'Nunito', sans-serif;
-	font-weight: 400;
-	font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background: #ff8c00;
 }
 
-.navbar.scrolled {
-	background: #ff8c00;
-	transition: background 700ms;
+/* line 23, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+#mainNavbar .navbar-brand .enlarge {
+  font-size: 2rem;
+  color: gray;
 }
 
-#mainoptions a,a:visited{
-	color:gray;
+/* line 31, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+.navbar .scrolled {
+  background: #ff8c00;
+  transition: background 700ms;
 }
 
-#mainoptions a:hover{
-	background: gray;
-	color: #ff8c00;
+/* line 38, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+#mainoptions a, #mainoptions a:visited {
+  color: #787878;
 }
 
-#header {
-	background:url("../images/background.jpg") center center / cover no-repeat;
+/* line 41, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+#mainoptions a:hover {
+  background: #787878;
+  color: #ff8c00;
 }
 
-#header .faceportrait {
-	border-radius: 50%;
+/* line 47, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+#mainpage {
+  margin-top: 53px;
 }
 
-#header .bigquote {
-	font-family: 'Nunito', sans-serif;
-	font-weight: 400;
-	font-size: 3rem;
+/* line 49, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+#mainpage .col-7 {
+  background: #4250f4;
 }
 
-#header .firstrow {
-	padding-top:65px;
+/* line 51, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+#mainpage .col-7 .intro {
+  font-family: "Arvo", serif;
+  width: 95%;
+  margin: 30px;
+  padding-top: 30px;
+  padding-bottom: 208px;
+  padding-left: 30px;
+  color: #ff8c00;
+  background: white;
 }
 
-#header .lastrow {
-	padding-top: 20px;
-	padding-bottom:50px;
+/* line 60, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+#mainpage .col-7 .intro #name {
+  font-size: 100px;
 }
 
-#header .invisible {
-	color:transparent;
+/* line 65, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+#mainpage #picture {
+  background: url("../images/fullbody.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  height: 610px;
+  margin: 30px;
 }
 
-@keyframes typing{
-	from { width: 0 }
-  	to { width: 100% }
-}
-
-@keyframes blink-caret {
-  0% { border-color: white; }
-  25% { border-color: transparent; }
-  50% { border-color: white; }
-  75% { border-color: transparent; }
-}
-
-#mainintro h1{
-	font-family: monospace;
-	overflow:hidden;
-	clear:both;
-	border-right: 2px solid transparent;
-	text-align:center;
-	font-size: 60px;
-	margin:0 auto;
-	white-space: nowrap;
-	animation: 
-    typing 6s steps(40, end),
-    blink-caret 1.3s step-end 2.3;
-}
-
-#mainintro h4{
-	clear:both;
-	text-align:center;
-	font-size: 30px;
-	animation: slowappear 4.6s steps(40,end);
-}
-
-@keyframes slowappear {
-	0% {color:transparent;}
-	70% {color:transparent;}
-	100% {color:white;}
-}
+/*# sourceMappingURL=../css/main.map */
