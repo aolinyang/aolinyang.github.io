@@ -1,5 +1,4 @@
-$pcolor: #ff8c00;
-$scolor: #4250f4;
+$pcolor: #0978c1;
 $gray-5: rgb(40,40,40);
 $gray-4: rgb(80,80,80);
 $gray-3: rgb(120,120,120);
@@ -10,7 +9,7 @@ $dfont: 'Nunito', sans-serif;
 $font2: 'Arvo', serif;
 
 body{
-	background:$scolor;
+	background:$gray-5;
 	color:white;
 }
 
@@ -22,7 +21,7 @@ body{
 	.navbar-brand{
 		.enlarge{
 			font-size: 2rem;
-			color:gray;
+			color:$gray-5;
 		}
 	}
 }
@@ -36,38 +35,89 @@ body{
 
 #mainoptions {
 	a,a:visited{
-		color: $gray-3;
+		color: $gray-5;
 	}
 	a:hover{
-		background: $gray-3;
+		background: $gray-5;
 		color: $pcolor;
 	}
 }
 
 #mainpage {
 	margin-top: 53px;
+	color: $pcolor;
+	font-family: $font2;
 	.col-7{
-		background: $scolor;
-		.intro{
-			font-family: $font2;
-			width:95%;
-			margin:30px;
+		background: $gray-5;
+		padding-right:0;
+		margin-right:0;
+		#intro{
+			width:95.8%;
+			margin:50px 0px 0px 30px;
 			padding-top:30px;
-			padding-bottom: 208px;
+			padding-bottom: 237px;
 			padding-left:30px;
-			color: $pcolor;
 			background: white;
 			#name{
 				font-size:100px;
 			}
 		}
 	}
-	#picture{
-		background: url("../images/fullbody.jpg");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center 40%;
-		height: 610px;
-		margin:30px;
+	.col-5{
+		padding-left:0;
+		margin-left:0;
+		#picture{
+			background: url("../images/fullbody.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center 40%;
+			height: 639px;
+			margin:50px 30px 0px 0px;
+		}
+	}
+	#about {
+		margin-top:6px;
+		.col-4{
+			padding-right:3px;
+			#about-me{
+				background: white;
+				margin-left: 30px;
+				margin-right:0;
+				height: 440px;
+				h1{
+					font-size: 80px;
+				}
+			}
+		}
+		.col-8{
+			padding-left:3px;
+			#about-desc{
+				background: white;
+				margin-right: 30px;
+				padding: 20px;
+			}
+		}
+	}
+	#resume {
+		margin-top:6px;
+		.col-8{
+			padding-right:3px;
+			#resume-content{
+				background: white;
+				margin-left: 30px;
+				padding: 20px;
+			}
+		}
+		.col-4{
+			padding-left:3px;
+			#resume-name{
+				background: white;
+				margin-right: 30px;
+				height: 540px;
+				h1{
+					font-size: 80px;
+				}
+			}
+		}
 	}
 }
