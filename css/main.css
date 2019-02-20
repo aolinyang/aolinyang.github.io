@@ -1,56 +1,61 @@
-/* line 11, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-body {
+/* line 13, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 15, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body {
   background: #282828;
   color: white;
 }
 
-/* line 16, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainNavbar {
+/* line 19, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainNavbar {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   background: #0978c1;
 }
 
-/* line 22, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainNavbar .navbar-brand .enlarge {
+/* line 25, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainNavbar .navbar-brand .enlarge {
   font-size: 2rem;
   color: #282828;
 }
 
-/* line 30, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-.navbar .scrolled {
+/* line 33, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body .navbar .scrolled {
   background: #0978c1;
   transition: background 700ms;
 }
 
-/* line 37, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainoptions a, #mainoptions a:visited {
+/* line 40, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainoptions a, html body #mainoptions a:visited {
   color: #282828;
 }
 
-/* line 40, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainoptions a:hover {
+/* line 43, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainoptions a:hover {
   background: #282828;
   color: #0978c1;
 }
 
-/* line 46, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage {
+/* line 49, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage {
   margin-top: 53px;
   color: #0978c1;
   font-family: "Arvo", serif;
 }
 
-/* line 50, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage .col-7 {
+/* line 53, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage .col-7 {
   background: #282828;
   padding-right: 0;
   margin-right: 0;
 }
 
-/* line 54, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage .col-7 #intro {
+/* line 57, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage .col-7 #intro {
   width: 95.8%;
   margin: 50px 0px 0px 30px;
   padding-top: 30px;
@@ -59,19 +64,19 @@ body {
   background: white;
 }
 
-/* line 61, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage .col-7 #intro #name {
+/* line 64, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage .col-7 #intro #name {
   font-size: 100px;
 }
 
-/* line 66, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage .col-5 {
+/* line 69, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage .col-5 {
   padding-left: 0;
   margin-left: 0;
 }
 
-/* line 69, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage .col-5 #picture {
+/* line 72, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage .col-5 #picture {
   background: url("../images/fullbody.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,73 +85,188 @@ body {
   margin: 50px 30px 0px 0px;
 }
 
-/* line 78, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage #about {
+/* line 81, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #about {
   margin-top: 6px;
 }
 
-/* line 80, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage #about .col-4 {
+/* line 83, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #about .col-4 {
   padding-right: 3px;
 }
 
-/* line 82, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage #about .col-4 #about-me {
+/* line 85, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #about .col-4 #about-me {
   background: white;
   margin-left: 30px;
   margin-right: 0;
-  height: 440px;
+  height: 402px;
 }
 
-/* line 87, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage #about .col-4 #about-me h1 {
+/* line 90, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #about .col-4 #about-me h1 {
   font-size: 80px;
 }
 
-/* line 92, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage #about .col-8 {
+/* line 95, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #about .col-8 {
   padding-left: 3px;
 }
 
-/* line 94, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage #about .col-8 #about-desc {
+/* line 97, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #about .col-8 #about-desc {
   background: white;
   margin-right: 30px;
   padding: 20px;
 }
 
 /* line 101, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage #resume {
+html body #mainpage #about .col-8 #about-desc p {
+  line-height: 2.2;
+  font-size: 110%;
+}
+
+/* line 108, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume {
   margin-top: 6px;
 }
 
-/* line 103, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage #resume .col-8 {
+/* line 110, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 {
   padding-right: 3px;
 }
 
-/* line 105, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage #resume .col-8 #resume-content {
+/* line 112, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 #resume-content {
   background: white;
   margin-left: 30px;
   padding: 20px;
 }
 
-/* line 111, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage #resume .col-4 {
+/* line 116, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 #resume-content #education {
+  padding-left: 2px;
+}
+
+/* line 118, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 #resume-content #education .col-2 {
+  margin-left: 0;
+}
+
+/* line 120, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 #resume-content #education .col-2 img {
+  width: 170px;
+  height: 170px;
+  margin: 10px 0;
+}
+
+/* line 126, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 #resume-content #education h4 {
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+/* line 129, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 #resume-content #education h4 span {
+  font-weight: 700;
+}
+
+/* line 134, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 #resume-content #experience {
+  padding-left: 2px;
+}
+
+/* line 136, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 #resume-content #experience .col-2 {
+  margin-left: 0;
+}
+
+/* line 138, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 #resume-content #experience .col-2 img {
+  width: 170px;
+  height: 170px;
+  margin: 10px 0;
+  border-style: solid;
+}
+
+/* line 145, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 #resume-content #experience h3 {
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+/* line 148, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 #resume-content #experience h3 span {
+  font-size: 80%;
+}
+
+/* line 152, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 #resume-content #experience p {
+  margin-left: 20px;
+}
+
+/* line 155, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-8 #resume-content #experience #tamuhack {
+  margin-top: 30px;
+}
+
+/* line 161, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-4 {
   padding-left: 3px;
 }
 
-/* line 113, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage #resume .col-4 #resume-name {
+/* line 163, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-4 #resume-name {
   background: white;
   margin-right: 30px;
   height: 540px;
 }
 
-/* line 117, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
-#mainpage #resume .col-4 #resume-name h1 {
+/* line 167, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #resume .col-4 #resume-name h1 {
   font-size: 80px;
+}
+
+/* line 173, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #projects {
+  margin-top: 6px;
+}
+
+/* line 175, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #projects .col-4 {
+  padding-right: 3px;
+}
+
+/* line 177, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #projects .col-4 #project-text {
+  background: white;
+  margin-left: 30px;
+  margin-right: 0;
+  height: 440px;
+}
+
+/* line 182, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #projects .col-4 #project-text h1 {
+  font-size: 80px;
+}
+
+/* line 187, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #projects .col-8 {
+  padding-left: 3px;
+}
+
+/* line 189, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #projects .col-8 #project-list {
+  background: white;
+  margin-right: 30px;
+  padding: 20px;
+}
+
+/* line 194, C:/Users/allen/Sites/aolinyang.github.io/scss/main.scss */
+html body #mainpage #projects .col-8 #project-list #thera .card-img-top {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(10px, 10px, 10px, 10px);
 }
 
 /*# sourceMappingURL=../css/main.map */

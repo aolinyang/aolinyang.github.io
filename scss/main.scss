@@ -8,10 +8,13 @@ $gray-1: rgb(200,200,200);
 $dfont: 'Nunito', sans-serif;
 $font2: 'Arvo', serif;
 
+$imgsize: 170px;
+
+html{
+	scroll-behavior: smooth;
 body{
 	background:$gray-5;
 	color:white;
-}
 
 #mainNavbar {
 	font-family: $dfont;
@@ -83,7 +86,7 @@ body{
 				background: white;
 				margin-left: 30px;
 				margin-right:0;
-				height: 440px;
+				height: 402px;
 				h1{
 					font-size: 80px;
 				}
@@ -95,6 +98,10 @@ body{
 				background: white;
 				margin-right: 30px;
 				padding: 20px;
+				p{
+					line-height: 2.2;
+					font-size: 110%;
+				}
 			}
 		}
 	}
@@ -106,6 +113,49 @@ body{
 				background: white;
 				margin-left: 30px;
 				padding: 20px;
+				#education{
+					padding-left: 2px;
+					.col-2{
+						margin-left:0;
+						img{
+							width: $imgsize;
+							height: $imgsize;
+							margin: 10px 0;
+						}
+					}
+					h4{
+						margin-top:8px;
+						margin-left: 20px;
+						span{
+							font-weight:700;
+						}
+					}
+				}
+				#experience{
+					padding-left: 2px;
+					.col-2{
+						margin-left:0;
+						img{
+							width: $imgsize;
+							height: $imgsize;
+							margin: 10px 0;
+							border-style: solid;
+						}
+					}
+					h3{
+						margin-top:8px;
+						margin-left: 20px;
+						span{
+							font-size: 80%;
+						}
+					}
+					p{
+						margin-left: 20px;
+					}
+					#tamuhack{
+						margin-top:30px;
+					}
+				}
 			}
 		}
 		.col-4{
@@ -120,4 +170,36 @@ body{
 			}
 		}
 	}
+	#projects {
+		margin-top:6px;
+		.col-4{
+			padding-right:3px;
+			#project-text{
+				background: white;
+				margin-left: 30px;
+				margin-right:0;
+				height: 440px;
+					h1{
+						font-size: 80px;
+					}
+				}
+			}
+		.col-8{
+			padding-left:3px;
+			#project-list{
+				background: white;
+				margin-right: 30px;
+				padding: 20px;
+				#thera{
+					.card-img-top{
+						position:absolute;
+						overflow:hidden;
+						clip: rect(10px,10px,10px,10px);
+					}
+				}
+			}
+		}
+	}	
+}
+}
 }
