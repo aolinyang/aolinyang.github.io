@@ -54,8 +54,8 @@ nav {
 	background-color: transparent;
 	color: white;
 	text-align: center;
-	margin-top: 14vh;
-	margin-bottom: 26vh;
+	margin-top: 13vh;
+	margin-bottom: 36vh;
 	h4, h5 {
 		font-family: $sfont;
 	}
@@ -71,10 +71,12 @@ nav {
 	
 }
 
-#bg {
-	background-color: white;
+.bggrey {
+	background-color: $greycolor;
+	color: white !important;
+	padding-top: 12vh;
+	padding-bottom: 12vh;
 	h2{
-		padding-top: 4vh;
 		margin: 0 0 4vh 0;
 		font-family: $pfont;
 		font-size: 8vh;
