@@ -4,8 +4,11 @@ $pcolor: #d9fcff;
 $greycolor: #35373b;
 
 body {
-	background-image: url(imgs/aurora.jpg);
-	background-size: 1540px 1013px;
+	background-image: url("imgs/aurora.jpg");
+	background-size: cover;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 0 -200px;
 	background-attachment: fixed;
@@ -51,15 +54,15 @@ nav {
 	background-color: transparent;
 	color: white;
 	text-align: center;
-	margin-top: 70px;
-	margin-bottom: 310px;
+	margin-top: 14vh;
+	margin-bottom: 26vh;
 	h4, h5 {
 		font-family: $sfont;
 	}
 }
 
 #myname {
-	font-size: 80px;
+	font-size: 10vh;
 	font-family: $pfont;
 	font-weight: 700;
 }
@@ -71,13 +74,13 @@ nav {
 #bg {
 	background-color: white;
 	h2{
-		padding-top: 20px;
-		margin: 0 0 20px 0;
+		padding-top: 4vh;
+		margin: 0 0 4vh 0;
 		font-family: $pfont;
-		font-size: 50px;
+		font-size: 8vh;
 	}
 	p{
 		font-family: $sfont;
-		font-size: 25px;
+		font-size: 3.5vh;
 	}
 }
