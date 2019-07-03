@@ -1,205 +1,83 @@
-$pcolor: #0978c1;
-$gray-5: rgb(40,40,40);
-$gray-4: rgb(80,80,80);
-$gray-3: rgb(120,120,120);
-$gray-2: rgb(160,160,160);
-$gray-1: rgb(200,200,200);
+$pfont: 'Merriweather', serif;
+$sfont: 'Lato', sans-serif;
+$pcolor: #d9fcff;
+$greycolor: #35373b;
 
-$dfont: 'Nunito', sans-serif;
-$font2: 'Arvo', serif;
+body {
+	background-image: url("../imgs/aurora.jpg");
+	background-size: 1540px 1013px;
+	background-repeat: no-repeat;
+	background-position: 0 -200px;
+	background-attachment: fixed;
+}
 
-$imgsize: 170px;
-
-html{
-	scroll-behavior: smooth;
-body{
-	background:$gray-5;
-	color:white;
-
-#mainNavbar {
-	font-family: $dfont;
+p {
+	font-family: $sfont;
 	font-weight: 400;
-	font-size: 1.5rem;
-	background: $pcolor;
-	.navbar-brand{
-		.enlarge{
-			font-size: 2rem;
-			color:$gray-5;
-		}
+}
+
+nav {
+	background-color: transparent;
+	font-family: $pfont;
+}
+
+.fixed-top.scrolled {
+  background-color: $greycolor !important;
+  transition: background-color 200ms linear;
+  .nav-item a:hover{
+  	background-color: white;
+  	color: $greycolor !important;
+  }
+}
+
+#mainnav {
+	padding: 0;
+}
+
+.navbar-brand {
+	padding: 20px;
+	font-size: 25px;
+	color: white !important;
+}
+
+.nav-item {
+	a {
+		padding: 27px 20px !important;
+		color: white !important;
 	}
 }
 
-.navbar{
-	.scrolled {
-		background: $pcolor;
-		transition: background 700ms;
+#mainbox {
+	background-color: transparent;
+	color: white;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 310px;
+	h4, h5 {
+		font-family: $sfont;
 	}
 }
 
-#mainoptions {
-	a,a:visited{
-		color: $gray-5;
-	}
-	a:hover{
-		background: $gray-5;
-		color: $pcolor;
-	}
+#myname {
+	font-size: 80px;
+	font-family: $pfont;
+	font-weight: 700;
 }
 
-#mainpage {
-	margin-top: 53px;
-	color: $pcolor;
-	font-family: $font2;
-	.col-7{
-		background: $gray-5;
-		padding-right:0;
-		margin-right:0;
-		#intro{
-			width:95.8%;
-			margin:50px 0px 0px 30px;
-			padding-top:30px;
-			padding-bottom: 237px;
-			padding-left:30px;
-			background: white;
-			#name{
-				font-size:100px;
-			}
-		}
-	}
-	.col-5{
-		padding-left:0;
-		margin-left:0;
-		#picture{
-			background: url("../images/fullbody.jpg");
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center 40%;
-			height: 639px;
-			margin:50px 30px 0px 0px;
-		}
-	}
-	#about {
-		margin-top:6px;
-		.col-4{
-			padding-right:3px;
-			#about-me{
-				background: white;
-				margin-left: 30px;
-				margin-right:0;
-				height: 402px;
-				h1{
-					font-size: 80px;
-				}
-			}
-		}
-		.col-8{
-			padding-left:3px;
-			#about-desc{
-				background: white;
-				margin-right: 30px;
-				padding: 20px;
-				p{
-					line-height: 2.2;
-					font-size: 110%;
-				}
-			}
-		}
-	}
-	#resume {
-		margin-top:6px;
-		.col-8{
-			padding-right:3px;
-			#resume-content{
-				background: white;
-				margin-left: 30px;
-				padding: 20px;
-				#education{
-					padding-left: 2px;
-					.col-2{
-						margin-left:0;
-						img{
-							width: $imgsize;
-							height: $imgsize;
-							margin: 10px 0;
-						}
-					}
-					h4{
-						margin-top:8px;
-						margin-left: 20px;
-						span{
-							font-weight:700;
-						}
-					}
-				}
-				#experience{
-					padding-left: 2px;
-					.col-2{
-						margin-left:0;
-						img{
-							width: $imgsize;
-							height: $imgsize;
-							margin: 10px 0;
-							border-style: solid;
-						}
-					}
-					h3{
-						margin-top:8px;
-						margin-left: 20px;
-						span{
-							font-size: 80%;
-						}
-					}
-					p{
-						margin-left: 20px;
-					}
-					#tamuhack{
-						margin-top:30px;
-					}
-				}
-			}
-		}
-		.col-4{
-			padding-left:3px;
-			#resume-name{
-				background: white;
-				margin-right: 30px;
-				height: 540px;
-				h1{
-					font-size: 80px;
-				}
-			}
-		}
-	}
-	#projects {
-		margin-top:6px;
-		.col-4{
-			padding-right:3px;
-			#project-text{
-				background: white;
-				margin-left: 30px;
-				margin-right:0;
-				height: 440px;
-					h1{
-						font-size: 80px;
-					}
-				}
-			}
-		.col-8{
-			padding-left:3px;
-			#project-list{
-				background: white;
-				margin-right: 30px;
-				padding: 20px;
-				#thera{
-					.card-img-top{
-						position:absolute;
-						overflow:hidden;
-						clip: rect(10px,10px,10px,10px);
-					}
-				}
-			}
-		}
-	}	
+#aboutme {
+	
 }
-}
+
+#bg {
+	background-color: white;
+	h2{
+		padding-top: 20px;
+		margin: 0 0 20px 0;
+		font-family: $pfont;
+		font-size: 50px;
+	}
+	p{
+		font-family: $sfont;
+		font-size: 25px;
+	}
 }
