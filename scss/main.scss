@@ -2,6 +2,13 @@ $pfont: 'Merriweather', serif;
 $sfont: 'Lato', sans-serif;
 $pcolor: #d9fcff;
 $greycolor: #35373b;
+$darkergrey: #2c2c2c;
+$titlesize: 8vh;
+$sectionpad: 12vh;
+
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	background-image: url("imgs/aurora.jpg");
@@ -19,17 +26,57 @@ p {
 	font-weight: 400;
 }
 
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: $greycolor;
+  a {
+	  display: block;
+	  text-align: center;
+	  padding: 16px;
+	  transition: all 0.3s ease;
+	  color: white;
+	  font-size: 20px;
+	}
+	a:hover {
+	  background-color: white;
+	  color: $greycolor;
+	}
+}
+
+#devpost {
+	.primary {
+		display: inline-block;
+	}
+	.secondary {
+		display: none;
+	}
+}
+#devpost:hover {
+	.primary {
+		display: none;
+	}
+	.secondary {
+		display: inline-block;
+	}
+}
+
 nav {
 	background-color: transparent;
+	transition: background-color 400ms linear;
 	font-family: $pfont;
 }
 
 .fixed-top.scrolled {
-  background-color: $greycolor !important;
-  transition: background-color 200ms linear;
+  background-color: $darkergrey !important;
+  transition: background-color 400ms linear;
   .nav-item a:hover{
   	background-color: white;
-  	color: $greycolor !important;
+  	color: $darkergrey !important;
+  	transition: background-color 800ms linear;
   }
 }
 
@@ -55,7 +102,7 @@ nav {
 	color: white;
 	text-align: center;
 	margin-top: 13vh;
-	margin-bottom: 36vh;
+	margin-bottom: 38vh;
 	h4, h5 {
 		font-family: $sfont;
 	}
@@ -67,22 +114,51 @@ nav {
 	font-weight: 700;
 }
 
-#aboutme {
-	
-}
-
 .bggrey {
 	background-color: $greycolor;
 	color: white !important;
-	padding-top: 12vh;
-	padding-bottom: 12vh;
-	h2{
-		margin: 0 0 4vh 0;
+	padding-top: $sectionpad;
+	padding-bottom: $sectionpad;
+	h2 {
+		margin-bottom: 4vh;
 		font-family: $pfont;
-		font-size: 8vh;
+		font-size: $titlesize;
 	}
-	p{
+	p {
 		font-family: $sfont;
 		font-size: 3.5vh;
+		line-height: 8vh;
+	}
+}
+
+.bgwhite {
+	background-color: white;
+	padding-top: $sectionpad;
+	padding-bottom: $sectionpad;
+	color: $greycolor;
+	h2 {
+		margin-bottom: 4vh;
+		font-family: $pfont;
+		font-size: $titlesize;
+	}
+}
+
+.downloadlink span {
+	margin-left: 5px;
+}
+
+.img-logo {
+	width: 24vh;
+	height: 24vh;
+}
+
+.logo-desc {
+	padding-left: 8vw;
+	font-family: $sfont;
+	h3 {
+		font-size: 5vh;
+	}
+	h6 {
+		font-size: 3.6vh;
 	}
 }
