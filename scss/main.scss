@@ -176,8 +176,8 @@ nav {
 }
 
 .img-logo {
-	height: 100%;
-	width: 100%;
+	width: 24vh;
+	height: 24vh;
 }
 
 .logo-desc {
@@ -191,7 +191,7 @@ nav {
 	}
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 992px) {
 	.img-logo {
 		height: 10%;
 		width: 10%;
