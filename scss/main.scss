@@ -3,7 +3,7 @@ $sfont: 'Lato', sans-serif;
 $pcolor: #d9fcff;
 $greycolor: #35373b;
 $darkergrey: #2c2c2c;
-$titlesize: 8vh;
+$titlesize: 350%;
 $sectionpad: 12vh;
 
 html {
@@ -17,7 +17,7 @@ body {
   	-moz-background-size: cover;
   	-o-background-size: cover;
 	background-repeat: no-repeat;
-	background-position: 0 -200px;
+	background-position: 0 50%;
 	background-attachment: fixed;
 }
 
@@ -70,6 +70,12 @@ nav {
 	font-family: $pfont;
 }
 
+@media only screen and (max-width: 992px) {
+	nav {
+		background-color: $darkergrey;
+	}
+}
+
 .fixed-top.scrolled {
   background-color: $darkergrey !important;
   transition: background-color 400ms linear;
@@ -98,13 +104,14 @@ nav {
 }
 
 #mainbox {
+	width: 80%;
 	background-color: transparent;
 	color: white;
 	text-align: center;
-	margin-top: 13vh;
-	margin-bottom: 38vh;
+	margin: 13vh auto 38vh auto;
 	h4, h5 {
 		font-family: $sfont;
+		font-size: 3vh;
 	}
 }
 
@@ -114,11 +121,20 @@ nav {
 	font-weight: 700;
 }
 
+@media only screen and (max-width: 768px) {
+	#myname {
+		font-size: 7vh;
+	}
+}
+
 .bggrey {
 	background-color: $greycolor;
 	color: white !important;
 	padding-top: $sectionpad;
 	padding-bottom: $sectionpad;
+	.container-fluid {
+		width: 80%;
+	}
 	h2 {
 		margin-bottom: 4vh;
 		font-family: $pfont;
