@@ -3,7 +3,6 @@ $sfont: 'Lato', sans-serif;
 $pcolor: #d9fcff;
 $greycolor: #35373b;
 $darkergrey: #2c2c2c;
-$titlesize: 350%;
 $sectionpad: 12vh;
 
 @-ms-viewport{
@@ -142,11 +141,11 @@ nav {
 	h2 {
 		margin-bottom: 4vh;
 		font-family: $pfont;
-		font-size: $titlesize;
+		font-size: 350%;
 	}
 	p {
 		font-family: $sfont;
-		font-size: 3.5vh;
+		font-size: 150%;
 		line-height: 8vh;
 	}
 }
@@ -162,7 +161,7 @@ nav {
 	h2 {
 		margin-bottom: 4vh;
 		font-family: $pfont;
-		font-size: $titlesize;
+		font-size: 350%;
 	}
 }
 
@@ -188,24 +187,49 @@ nav {
 	}
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 960px) {
 	.img-logo {
 		display: none !important;
 	}
 	.logo-desc {
 		padding-left: 0 !important;
+		h3 {
+		font-size: 175%;
+		}
+		h6 {
+			font-size: 150%;
+		}
 	}
 	.bgwhite {
 		h2 {
 			font-size: 275%;
 		}
 	}
+}
+
+@media only screen and (max-width: 576px) {
+	.container-fluid {
+		margin-left: 10%;
+	}
+	.bggrey {
+		h2 {
+			font-size: 200%;
+		}
+		p {
+			font-size: 100%;
+		}
+	}
+	.bgwhite {
+		h2 {
+			font-size: 200%;
+		}
+	}
 	.logo-desc {
 		h3 {
-		font-size: 175%;
+			font-size: 130%;
 		}
 		h6 {
-			font-size: 150%;
+			font-size: 110%;
 		}
 	}
 }
