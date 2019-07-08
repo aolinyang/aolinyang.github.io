@@ -12,12 +12,12 @@ html {
 
 body {
 	background-image: url("imgs/aurora.jpg");
-	background-size: cover;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
+	background-size: 100%;
+	-webkit-background-size: 100%;
+  	-moz-background-size: 100%;
+  	-o-background-size: 100%;
 	background-repeat: no-repeat;
-	background-position: 0 50%;
+	
 	background-attachment: fixed;
 }
 
@@ -152,6 +152,9 @@ nav {
 	padding-top: $sectionpad;
 	padding-bottom: $sectionpad;
 	color: $greycolor;
+	.container-fluid {
+		width: 80%;
+	}
 	h2 {
 		margin-bottom: 4vh;
 		font-family: $pfont;
@@ -159,8 +162,10 @@ nav {
 	}
 }
 
-.downloadlink span {
-	margin-left: 5px;
+.downloadlink {
+	span {
+		margin-left: 5px;
+	}
 }
 
 .img-logo {
@@ -169,12 +174,34 @@ nav {
 }
 
 .logo-desc {
-	padding-left: 8vw;
+	padding-left: 20px;
 	font-family: $sfont;
 	h3 {
-		font-size: 5vh;
+		font-size: 200%;
 	}
 	h6 {
-		font-size: 3.6vh;
+		font-size: 150%;
+	}
+}
+
+@media only screen and (max-width: 1120px) {
+	.img-logo {
+		display: none !important;
+	}
+	.logo-desc {
+		padding-left: 0 !important;
+	}
+	.bgwhite {
+		h2 {
+			font-size: 275%;
+		}
+	}
+	.logo-desc {
+		h3 {
+		font-size: 175%;
+		}
+		h6 {
+			font-size: 150%;
+		}
 	}
 }
