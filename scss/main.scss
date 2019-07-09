@@ -172,38 +172,24 @@ nav {
 }
 
 .img-logo {
-	width: 24vh;
-	height: 24vh;
+	width: 20vh;
+	height: 20vh;
 }
 
 .logo-desc {
-	padding-left: 20px;
 	font-family: $sfont;
+	padding-left: 3%;
 	h3 {
-		font-size: 200%;
+		font-size: 175%;
 	}
 	h6 {
-		font-size: 150%;
+		font-size: 120%;
 	}
 }
 
+
+
 @media only screen and (max-width: 992px) {
-	.img-logo {
-		height: 20vh;
-		width: 20vh;
-	}
-	.logo {
-		padding-left: 3% !important;
-	}
-	.logo-desc {
-		padding-left: 3% !important;
-		h3 {
-		font-size: 175%;
-		}
-		h6 {
-			font-size: 150%;
-		}
-	}
 	.bgwhite {
 		.title {
 			font-size: 275%;
@@ -212,7 +198,32 @@ nav {
 			padding-left: 3%;
 		}
 		.buttoncontainer {
+			padding-left: 15px;
+			margin-top: 5px;
+		}
+	}
+	.bggrey {
+		.title {
+			font-size: 275%;
+		}
+		.titlecontainer {
 			padding-left: 3%;
+		}
+	}
+	.img-logo {
+		height: 20vh;
+		width: 20vh;
+	}
+	.logo {
+		
+	}
+	.logo-desc {
+		
+		h3 {
+		font-size: 150%;
+		}
+		h6 {
+			font-size: 100%;
 		}
 	}
 }
@@ -233,13 +244,21 @@ nav {
 		.title {
 			font-size: 200%;
 		}
+		.buttoncontainer {
+			padding-left: 15px;
+			margin-top: 5px;
+		}
+	}
+	.img-logo {
+		width: 16vh;
+		height: 16vh;
 	}
 	.logo-desc {
 		h3 {
-			font-size: 130%;
+			font-size: 120%;
 		}
 		h6 {
-			font-size: 110%;
+			font-size: 80%;
 		}
 	}
 }
