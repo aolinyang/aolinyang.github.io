@@ -35,7 +35,7 @@ p {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: $greycolor;
+  background-color: $darkergrey;
   a {
 	  display: block;
 	  text-align: center;
@@ -46,7 +46,7 @@ p {
 	}
 	a:hover {
 	  background-color: white;
-	  color: $greycolor;
+	  color: $darkergrey;
 	}
 }
 
@@ -141,11 +141,11 @@ nav {
 	.title {
 		margin-bottom: 4vh;
 		font-family: $pfont;
-		font-size: 350%;
+		font-size: 3.5em;
 	}
 	p {
 		font-family: $sfont;
-		font-size: 150%;
+		font-size: 1.5em;
 		line-height: 8vh;
 	}
 }
@@ -161,13 +161,10 @@ nav {
 	.title {
 		margin-bottom: 4vh;
 		font-family: $pfont;
-		font-size: 350%;
+		font-size: 3.5em;
 	}
-}
-
-.downloadlink {
-	span {
-		margin-left: 5px;
+	.bigrow {
+		padding-bottom: 6vh;
 	}
 }
 
@@ -180,31 +177,78 @@ nav {
 	font-family: $sfont;
 	padding-left: 3%;
 	h3 {
-		font-size: 175%;
+		font-size: 1.75em;
+		div {
+			font-size: 0.5em;
+			padding-top: 3px;
+		}
 	}
 	h6 {
-		font-size: 120%;
+		font-size: 1.2em;
+		margin-bottom: 2px;
 	}
 }
 
+.dotrow {
+	margin-bottom: 2px;
+}
 
+.dot {
+  height: 0.6em;
+  width: 0.6em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-java {
+	background-color: red;
+}
+
+.dot-jfx {
+	background-color: #f5a142;
+	margin-left: 10px;
+}
+
+.dot-html {
+	background-color: #003e85;
+}
+
+.dot-css {
+	background-color: #008549;
+	margin-left: 10px;
+}
+
+.dot-bootstrap {
+	background-color: #a16300;
+	margin-left: 10px;
+}
+
+.dot-android {
+	background-color: #00c4aa;
+	margin-left: 10px;
+}
+
+.dot-firebase {
+	background-color: #690096;
+	margin-left: 10px;
+}
 
 @media only screen and (max-width: 992px) {
 	.bgwhite {
 		.title {
-			font-size: 275%;
+			font-size: 2.75em;
 		}
 		.titlecontainer {
 			padding-left: 3%;
 		}
-		.buttoncontainer {
+		.linkcontainer {
 			padding-left: 15px;
-			margin-top: 5px;
+			margin-top: 10px;
 		}
 	}
 	.bggrey {
 		.title {
-			font-size: 275%;
+			font-size: 2.75em;
 		}
 		.titlecontainer {
 			padding-left: 3%;
@@ -214,17 +258,17 @@ nav {
 		height: 20vh;
 		width: 20vh;
 	}
-	.logo {
-		
-	}
 	.logo-desc {
 		
 		h3 {
-		font-size: 150%;
+		font-size: 1.5em;
 		}
 		h6 {
-			font-size: 100%;
+			font-size: 1em;
 		}
+	}
+	.downloadlink {
+		font-size: 1em;
 	}
 }
 
@@ -244,7 +288,7 @@ nav {
 		.title {
 			font-size: 200%;
 		}
-		.buttoncontainer {
+		.linkcontainer {
 			padding-left: 15px;
 			margin-top: 5px;
 		}
@@ -260,5 +304,11 @@ nav {
 		h6 {
 			font-size: 80%;
 		}
+	}
+	.linkcontainer div {
+		height: 1em;
+	}
+	.downloadlink {
+		font-size: 0.8em;
 	}
 }
