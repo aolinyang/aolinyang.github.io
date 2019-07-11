@@ -48,6 +48,10 @@ p {
 	  background-color: white;
 	  color: $darkergrey;
 	}
+	img {
+		width: 28px;
+		height: 28px;
+	}
 }
 
 #devpost {
@@ -111,7 +115,7 @@ nav {
 	background-color: transparent;
 	color: white;
 	text-align: center;
-	margin: 13vh auto 38vh auto;
+	margin: 10vh auto 38vh auto;
 	h4, h5 {
 		font-family: $sfont;
 		font-size: 3vh;
@@ -127,6 +131,36 @@ nav {
 @media only screen and (max-width: 768px) {
 	#myname {
 		font-size: 7vh;
+	}
+}
+
+#linkrow {
+	a {
+		font-size: 24px;
+		color: white;
+		padding: 10px 30px;
+		#devimg-primary {
+			display: inline-block;
+		}
+		#devimg-secondary {
+			display: none;
+		}
+	}
+	a:hover {
+		color: #36e4ff;
+		#devimg-primary {
+			display: none;
+		}
+		#devimg-secondary {
+			display: inline-block;
+		}
+	}
+	img {
+		width: 32px;
+		height: 32px;
+	}
+	.devimg {
+		margin-bottom: 5px;
 	}
 }
 
@@ -189,6 +223,9 @@ nav {
 		margin-bottom: 2px;
 	}
 }
+.downloadlink {
+	font-size: 1.2em;
+}
 
 .dotrow {
 	margin-bottom: 2px;
@@ -237,21 +274,54 @@ nav {
 .skillrow {
 	font-family: $sfont;
 	.skillcontainer {
-		padding-bottom: 3em;
+		padding-bottom: 7em;
 	}
 	img {
 		width: 5em;
 		height: auto;
 		padding-bottom: 0;
 	}
+	h2 {
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 993px) {
+	#androidstudio {
+		img, h2 {
+			margin-left: 35%;
+		}
+	}
+	#firebase {
+		img, h2 {
+			margin-right: 35%;
+		}
+	}
 }
 
 #footer {
 	p {
 		text-align: center;
+		margin-bottom: 0;
 	}
+	color: gray;
 	margin-bottom: 0;
 	padding-bottom: 10px;
+	font-size: 0.8em;
+}
+
+@media only screen and (max-width: 1200px) {
+	.logo-desc {
+		h3 {
+			font-size: 1.5em;
+		}
+		h6 {
+			font-size: 1em;
+		}
+	}
+	.downloadlink {
+		font-size: 1em;
+	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -280,17 +350,17 @@ nav {
 		width: 20vh;
 	}
 	.logo-desc {
-		
 		h3 {
-		font-size: 1.5em;
+			font-size: 1.5em;
 		}
 		h6 {
-			font-size: 1em;
+			font-size: 0.8em;
 		}
 	}
 	.downloadlink {
-		font-size: 1em;
+		font-size: 0.8em;
 	}
+
 }
 
 @media only screen and (max-width: 576px) {
@@ -299,10 +369,10 @@ nav {
 	}
 	.bggrey {
 		.title {
-			font-size: 200%;
+			font-size: 2em;
 		}
 		p {
-			font-size: 100%;
+			font-size: 1em;
 		}
 	}
 	.bgwhite {
@@ -320,16 +390,22 @@ nav {
 	}
 	.logo-desc {
 		h3 {
-			font-size: 120%;
+			font-size: 1em;
 		}
 		h6 {
-			font-size: 80%;
+			font-size: 0.7em
 		}
 	}
 	.linkcontainer div {
 		height: 1em;
 	}
 	.downloadlink {
-		font-size: 0.8em;
+		font-size: 0.7em;
+	}
+	.skillcontainer {
+		padding-bottom: 2em !important;
+		h2 {
+			font-size: 1.3em;
+		}
 	}
 }
