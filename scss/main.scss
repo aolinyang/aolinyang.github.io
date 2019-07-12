@@ -185,7 +185,7 @@ nav {
 	p {
 		font-family: $sfont;
 		font-size: 1.5em;
-		line-height: 8vh;
+		line-height: 60px;
 	}
 }
 
@@ -385,6 +385,9 @@ nav {
 		.title {
 			font-size: 2.75em;
 		}
+		p {
+			font-size: 1.2em;
+		}
 		.titlecontainer {
 			padding-left: 3%;
 		}
@@ -417,6 +420,7 @@ nav {
 		}
 		p {
 			font-size: 1em;
+			line-height: 40px;
 		}
 	}
 	.bgwhite {
