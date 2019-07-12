@@ -117,9 +117,13 @@ nav {
 	color: white;
 	text-align: center;
 	margin: 10vh auto 38vh auto;
-	h4, h5 {
+	h4{
 		font-family: $sfont;
 		font-size: 3vh;
+	}
+	h5 {
+		font-family: $sfont;
+		font-size: 2.3vh;
 	}
 }
 
@@ -226,6 +230,32 @@ nav {
 }
 .downloadlink {
 	font-size: 1.2em;
+}
+.downloadlink:hover {
+	text-decoration: none;
+}
+
+.interestblock {
+	text-align: center;
+	.interesticon {
+		font-size: 2em;
+		padding-bottom: 1em;
+	}
+	h3 {
+		font-size: 1.2em;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.interestblock {
+		.interesticon {
+			padding-bottom: 0.5em;
+			padding-top: 1em;
+			a:hover {
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 .dotrow {
@@ -378,8 +408,8 @@ nav {
 }
 
 @media only screen and (max-width: 576px) {
-	.container-fluid {
-		margin-left: 15%;
+	.icon-bar {
+		display: none;
 	}
 	.bggrey {
 		.title {
