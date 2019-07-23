@@ -302,6 +302,13 @@ nav {
 	margin-left: 10px;
 }
 
+.skillsubtitle {
+	font-family: $pfont;
+	text-align: center;
+	font-size: 2em;
+	padding-bottom: 30px;
+}
+
 .skillrow {
 	font-family: $sfont;
 	.skillcontainer {
@@ -350,6 +357,9 @@ nav {
 	}
 	.downloadlink {
 		font-size: 1em;
+	}
+	.skillsubtitle {
+		font-size: 1.6em;
 	}
 }
 
@@ -442,6 +452,9 @@ nav {
 	}
 	.downloadlink {
 		font-size: 0.7em;
+	}
+	.skillsubtitle {
+		font-size: 1.3em;
 	}
 	.skillcontainer {
 		padding-bottom: 2em !important;
