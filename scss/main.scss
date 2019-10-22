@@ -207,6 +207,16 @@ nav {
 	}
 }
 
+.profile-pic {
+	max-width: 12em;
+	width: auto;
+	height: auto;
+	display: block;
+	margin-right: 5em;
+	margin-top: 0.5em;
+	border-radius: 20%;
+}
+
 .img-logo {
 	width: 20vh;
 	height: 20vh;
@@ -269,6 +279,22 @@ nav {
   display: inline-block;
 }
 
+.dot-js {
+	background-color: #f6ff00;
+}
+
+.dot-react {
+	background-color: #ff7300;
+}
+
+.dot-node {
+	background-color: #00ff99;
+}
+
+.dot-sql {
+	background-color: #e100ff;
+}
+
 .dot-java {
 	background-color: red;
 }
@@ -282,7 +308,7 @@ nav {
 	background-color: #003e85;
 }
 
-.dot-css {
+.dot-scss {
 	background-color: #008549;
 	margin-left: 10px;
 }
@@ -364,6 +390,9 @@ nav {
 }
 
 @media only screen and (max-width: 992px) {
+	.profile-pic {
+		max-width: 9em;
+	}
 	#education {
 		padding-top: $sectionpadtop;
 	}
@@ -407,6 +436,12 @@ nav {
 		font-size: 0.8em;
 	}
 
+}
+
+@media only screen and (max-width: 768px) {
+	.profile-pic {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 576px) {
